@@ -21,7 +21,7 @@ LABEL maintainer="contact@senx.io"
 
 
 # Installing utils need by Warp 10 and build-dependencies
-RUN apk --no-cache add bash curl fontconfig unifont \
+RUN apk --no-cache add bash curl fontconfig unifont git \
   && apk --no-cache add --virtual=build-dependencies ca-certificates wget
 
 ENV WARP10_VOLUME=/data \
